@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -30,9 +31,31 @@ export default function Home() {
               <h4 className={styles.mainTextH4}>
                 Divirta-se com curiosidades<br /> interessantísimas que<br /><b> Você não Sabia</b>
               </h4>
+              <button className={styles.seeButton}>
+                <Link href={`/curiosidades/1`}>
+                  <a className={styles.anchor}>
+                    Ver Curiosidades <b className={styles.gt}>&gt;</b>
+                  </a>
+                </Link>
+              </button>
             </div>
             <img src="/preta.png" alt="Dog Image" className={styles.mainImage} />
           </section>
+          <table className={styles.table}>
+            <caption>Informações</caption>
+            <thead>
+              <tr>
+                <th>Curiosidades Visualizadas</th>
+                <th>Curiosidades Enviadas<br />(Futuro)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
         </main>
       </div>
 

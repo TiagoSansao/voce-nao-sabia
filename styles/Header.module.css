@@ -1,11 +1,18 @@
-.container {
+.lHeader {
+  width: 100%;
   display: flex;
+  justify-content: center;
   box-shadow: 0px 0px 5px #0f1011;
   background-color: #2b7a78;
-  height: 75px;
-  align-items: center;
   padding: 0px 10px 0px 10px;
-  
+  height: 75px;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
