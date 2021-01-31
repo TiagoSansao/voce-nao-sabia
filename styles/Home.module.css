@@ -2,23 +2,38 @@
   min-height: 100vh;
   display: flex;
   background-color: #3AAFA9;
+  flex-direction: column;
+  /* background-image: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
   color: #FEFFFF;
 }
 
+.lMain {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
 .main {
+  max-width: 960px;
   width: 100%;
 }
 
 .mainTop {
-  width: 480px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .mainLeft {
-  float: left;
+
 }
 
 .mainImage {
-  width: 200px;
+  width: 150px;
   height: auto;
   float: right;
 }
@@ -53,3 +68,10 @@
   line-height: 30px;
   color: #17252A;
 }
+
+@media (max-width: 800px) {
+  .mainTop {
+    flex-direction: column;
+  }
+}
+
