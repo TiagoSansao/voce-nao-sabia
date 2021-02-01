@@ -1,0 +1,36 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(46deg,#1b2b97, #063188);
+  flex-direction: column;
+  color: #FEFFFF;
+} 
+
+.lMain {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.curiosityBalloon {
+  min-width: 300px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 20px;
+  border: 1px solid blue;
+  font-size: 1.7rem;
+  margin: 0px 15px 0px 15px;
+}

@@ -3,9 +3,9 @@
   display: flex;
   background-color: #3AAFA9;
   flex-direction: column;
-  /* background-image: url("/background.png");
+  background-image: url("/background.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   color: #FEFFFF;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .mainTop {
-  margin-top: 40px; 
+  margin-top: 40px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@
   text-shadow: 1px 1px 1px black;
   font-weight: 600;
   line-height: 30px;
-  color: #17252A;
+  color: rgb(158, 44, 9);
 }
 
 .seeButton {
@@ -121,6 +121,7 @@
   background-color: #2b7a78;
   margin: auto;
   margin: 30px auto 30px auto;
+  display: none; /* remember to change */
 }
 
 .table caption {

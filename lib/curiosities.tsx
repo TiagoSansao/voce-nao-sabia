@@ -22,5 +22,5 @@ export function getAllCuriositiesId() {
 }
 
 export function getCuriosityData(id: number) {
-  return curiosities[id]
+  return curiosities[id];
 }
