@@ -21,6 +21,7 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
 
   const allIds = getAllCuriositiesId();
   const highestPage = allIds[allIds.length - 1].params.id;
+  console.error('salve')
 
   return (
     <div className={styles.container}>
