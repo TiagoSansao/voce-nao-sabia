@@ -32,7 +32,7 @@ export default function Home() {
                 Divirta-se com curiosidades<br /> interessantísimas que<br /><b> Você não Sabia</b>
               </h4>
               <button className={styles.seeButton}>
-                <Link href={`/curiosidades/1`}>
+                <Link href={`/curiosidades/0`}>
                   <a className={styles.anchor}>
                     Ver Curiosidades <b className={styles.gt}>&gt;</b>
                   </a>

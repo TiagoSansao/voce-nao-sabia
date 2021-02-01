@@ -1,19 +1,27 @@
-import { getAllCuriositiesId, getCuriosityData } from '../../lib/curiosities'
 import styles from '../../styles/Curiosity.module.css'
 import Head from 'next/head';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-
+import Link from 'next/link';
+import { getAllCuriositiesId, getCuriosityData } from '../../lib/curiosities'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 interface curiosityDataTypes {
   curiosityData: {
-    id: number,
+    id: string,
     curiosity: string,
     font: string,
   }
 }
 
+
+
 export default function curiosity({ curiosityData }: curiosityDataTypes) {
+
+  const allIds = getAllCuriositiesId();
+  const highestPage = allIds[allIds.length - 1].params.id;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -30,11 +38,24 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
       <Header />
       <div className={styles.lMain}>
         <main className={styles.main}>
-          <i className="fas fa-arrow-left"></i>
+
+          {
+            curiosityData.id === "0" ?
+              <div className={styles.width120}></div> :
+              <Link href={"./" + (parseInt(curiosityData.id) - 1)}><FontAwesomeIcon width="120" icon={faArrowLeft} /></Link>
+          }
+
           <div className={styles.curiosityBalloon}>
             {curiosityData.curiosity}
           </div>
-          <i className="fas fa-arrow-right"></i>
+
+          {
+            curiosityData.id === highestPage ?
+              <div className={styles.width120}></div> :
+              <Link href={"./" + (parseInt(curiosityData.id) + 1)}><FontAwesomeIcon width="120" icon={faArrowRight} /></Link>
+          }
+
+
         </main>
       </div>
       <Footer />
@@ -52,6 +73,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const curiosityData = getCuriosityData(params.id)
+
   return {
     props: {
       curiosityData
