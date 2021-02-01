@@ -3,9 +3,9 @@ import Head from 'next/head';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Link from 'next/link';
-import { getAllCuriositiesId, getCuriosityData } from '../../lib/curiosities'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { getAllCuriositiesId, getCuriosityData } from '../../lib/curiosities';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 interface curiosityDataTypes {
   curiosityData: {
@@ -21,7 +21,6 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
 
   const allIds = getAllCuriositiesId();
   const highestPage = allIds[allIds.length - 1].params.id;
-  console.error('salve')
 
   return (
     <div className={styles.container}>

@@ -7,7 +7,7 @@ function Header() {
       <header className={styles.container}>
         <Link href="/">
           <div className={styles.containerv2}>
-            <img src="/magteste.png" className={styles.icon} alt="icon" />
+            <img src="/icon.png" className={styles.icon} alt="icon" />
             <h1 className={styles.h1}>&nbsp;Você <span className={styles.red}>Não</span> Sabia</h1>
           </div>
         </Link>

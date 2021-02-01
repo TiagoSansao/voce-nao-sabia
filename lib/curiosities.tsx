@@ -1,8 +1,29 @@
 const flat = [
-  "Estima-se que 4% da população mundial seja canhota.",
-  "Estima-se que o Universo conte com mais de 10 bilhões de galáxias.",
-  "Temos cerca de 7 octilhões de átomos no nosso corpo. Cada átomo, a unidade básica da matéria, contém um núcleo maciço e denso rodeado por elétrons. Acontece que o núcleo é bem pequeno em relação ao tamanho do átomo. Por exemplo: se o núcleo fosse do tamanho de uma bola de tênis, os elétrons estariam a 500 metros de distância dele! Assim, a maior parte de um átomo é espaço vazio",
-  ""
+  "Todos os insetos possuem 6 pernas.",
+  "Você gasta mais calorias dormindo do que assistindo TV.",
+  "Estima-se que 11% das pessoas sejam canhota.",
+  "Agosto é o mês com a maior porcentagem de nascimentos.",
+  "A batata frita (\"French Fries\" em Inglês) foi inventada na Bélgica.",
+  "É estimado que o Universo possua mais de 10 bilhões de galáxias.",
+  "A média de tempo para alguém dormir é 7 minutos.",
+  "Você só consegue sentir gosto de comida misturada com saliva.",
+  "Os idiomas mais utilizados no mundo são Chinês, Espanhol e Inglês.",
+  "Dinheiro é principal motivo de discussão entre casais.",
+  "Aranhas são aracnídeos, não insetos.",
+  "Sempre que você vê uma lua cheia, você vê o mesmo lado.",
+  "Um beijo de 1 minuto queima 26 calorias.",
+  "Os elefantes são os únicos mamíferos que não podem pular.",
+  "Esponjas absorvem mais água fria do que quente.",
+  "Coalas dormem mais ou menos 18 horas por dia.",
+  "O dedo mais sensível é o indicador.",
+  "Todo dia é um feriado em algum lugar do mundo.",
+  "Há 31.557.600 de segundos em um ano. ",
+  "A Torre Eiffel possuí 1792 degrais.",
+  "Eisten dormia 10 horas por dia.",
+  "Todos os domínios .com com 3 letras possíveis já foram registrados.",
+  "Você respira mais de 23 mil vezes por dia.",
+  "Apenas mosquitos femininos picam. ",
+  "O vento só faz barulho ao colodir com algo material."
 ];
 
 const curiosities = flat.map((curiosity, index) => {

@@ -39,7 +39,7 @@ export default function Home() {
                 </Link>
               </button>
             </div>
-            <img src="/preta.png" alt="Dog Image" className={styles.mainImage} />
+            <img src="/dog.png" alt="Dog Image" className={styles.mainImage} />
           </section>
           <table className={styles.table}>
             <caption>Informações</caption>
