@@ -42,7 +42,7 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
           {
             curiosityData.id === "0" ?
               <div className={styles.width120}></div> :
-              <Link href={"./" + (parseInt(curiosityData.id) - 1)}><FontAwesomeIcon width="120" icon={faArrowLeft} /></Link>
+              <Link href={"./" + (parseInt(curiosityData.id) - 1)}><FontAwesomeIcon width="120" className={styles.arrow} icon={faArrowLeft} /></Link>
           }
 
           <div className={styles.curiosityBalloon}>
@@ -52,7 +52,7 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
           {
             curiosityData.id === highestPage ?
               <div className={styles.width120}></div> :
-              <Link href={"./" + (parseInt(curiosityData.id) + 1)}><FontAwesomeIcon width="120" icon={faArrowRight} /></Link>
+              <Link href={"./" + (parseInt(curiosityData.id) + 1)}><FontAwesomeIcon className={styles.arrow} icon={faArrowRight} /></Link>
           }
 
 
