@@ -7,7 +7,7 @@ function Footer() {
       <p className={styles.text}>
         2021 - {new Date().getFullYear()} &copy; Você Não Sabia
       </p>
-      <p><Link href="termos-de-servico">Termos de Serviço</Link> &nbsp;&nbsp;|&nbsp;&nbsp; <Link href="/politicas-de-privacidade">Políticas de Privacidade</Link> </p>
+      <p><Link href="/termos-de-servico">Termos de Serviço</Link> &nbsp;&nbsp;|&nbsp;&nbsp; <Link href="/politicas-de-privacidade">Políticas de Privacidade</Link> </p>
     </footer>
   )
 }

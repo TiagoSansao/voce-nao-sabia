@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-br">
-        <Head>
+        <Head> 
           <script data-ad-client="ca-pub-8981365857371901" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <body>
