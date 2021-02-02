@@ -17,13 +17,21 @@ const flat = [
   "Coalas dormem mais ou menos 18 horas por dia.",
   "O dedo mais sensível é o indicador.",
   "Todo dia é um feriado em algum lugar do mundo.",
+  "Estima-se que 2/3 das pessoas nunca viram neve na vida.",
   "Há 31.557.600 de segundos em um ano. ",
   "A Torre Eiffel possuí 1792 degrais.",
   "Eisten dormia 10 horas por dia.",
+  "Estima-se que cada pessoa perca 4kg de pele morta todo ano.",
   "Todos os domínios .com com 3 letras possíveis já foram registrados.",
   "Você respira mais de 23 mil vezes por dia.",
   "Apenas mosquitos femininos picam. ",
-  "O vento só faz barulho ao colodir com algo material."
+  "O vento só faz barulho ao colodir com algo material.",
+  "A Iguana pode ficar embaixo da água por 28 minutos.",
+  "É estimado que 30% do sangue bombeado vá para o cérebro.",
+  "O Brasil é o país com mais água doce no mundo, seguido pela Russia em segundo.",
+  "Meses que começam no domingo sempre terão uma Sexta-feira treze.",
+  "O cachorro mais pequeno do mundo é o Chihuahua..",
+  "O morcego é o único mamífero que voa.",
 ];
 
 const curiosities = flat.map((curiosity, index) => {
