@@ -1,6 +1,6 @@
 {
   "name": "Você Não Sabia - Curiosidades",
-  "shortname": "Você Não Sabia",
+  "short_name": "Você Não Sabia",
   "theme_color": "#250eee",
   "background_color": "#250eee",
   "display": "fullscreen",
@@ -11,6 +11,11 @@
     {
       "src": "/android-chrome-96x96.png",
       "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
