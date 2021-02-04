@@ -88,7 +88,15 @@
   transition:  0.5s;
   background:#dc3d4b;
   color: white;
+}
 
+.buttonDown {
+  width: 330px;
+  align-self: center;
+  text-align: center;
+  margin-top: 3px;
+  color: rgb(182, 182, 182);
+  text-shadow: 1px 1px 1px black;
 }
 
 .seeButton:hover {
@@ -113,31 +121,6 @@
   font-size: 2rem;
   margin-left: 10px;
   margin-bottom: 2px;
-}
-
-.table {
-  border-collapse: collapse;
-  border: 1px solid #205857;
-  background-color: #2b7a78;
-  margin: auto;
-  margin: 30px auto 30px auto;
-  display: none; /* remember to change */
-}
-
-.table caption {
-  font-size: 2rem;
-  color: #17252a;
-}
-
-.table th {
-  padding: 5px;
-  background-color: #205857;
-}
-
-.table td {
-  padding: 5px 10px 5px 10px;
-  border-top: 1px solid #205857;
-  border-left: 1px solid #205857;
 }
 
 

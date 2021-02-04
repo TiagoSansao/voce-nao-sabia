@@ -5,6 +5,14 @@ import Footer from '../components/footer';
 import Link from 'next/link';
 
 export default function Home() {
+
+  const isServer: boolean = typeof window === "undefined";
+  let lastTimeIndex: string | null;
+  if (!isServer) {
+    lastTimeIndex = localStorage.getItem('lastTimeIndex');
+  }
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -32,30 +40,20 @@ export default function Home() {
                 Divirta-se com curiosidades<br /> interessantísimas que<br /><b> Você não Sabia</b>
               </h4>
               <button className={styles.seeButton}>
-                <Link href={`/curiosidades/0`}>
+                <Link href={lastTimeIndex ? `/curiosidades/${lastTimeIndex}` : `/curiosidades/0`}>
                   <a className={styles.anchor}>
                     Ver Curiosidades <b className={styles.gt}>&gt;</b>
                   </a>
                 </Link>
               </button>
+              <p className={styles.buttonDown}>
+                {lastTimeIndex ? 'Você continuará no lugar em que parou na sua última visita!' :
+                  'Em sua próxima visita clique neste botão para continuar no lugar em que você parar agora.'}
+              </p>
             </div>
             <img src="/dog.png" alt="Dog Image" className={styles.mainImage} />
           </section>
-          <table className={styles.table}>
-            <caption>Informações</caption>
-            <thead>
-              <tr>
-                <th>Curiosidades Visualizadas</th>
-                <th>Curiosidades Enviadas<br />(Futuro)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>5</td>
-                <td>0</td>
-              </tr>
-            </tbody>
-          </table>
+
         </main>
       </div>
 

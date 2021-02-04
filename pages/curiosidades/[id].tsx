@@ -22,6 +22,11 @@ export default function curiosity({ curiosityData }: curiosityDataTypes) {
   const allIds = getAllCuriositiesId();
   const highestPage = allIds[allIds.length - 1].params.id;
 
+  const isServer: boolean = typeof window === "undefined";
+  if (!isServer) {
+    localStorage.setItem('lastTimeIndex', curiosityData.id);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
