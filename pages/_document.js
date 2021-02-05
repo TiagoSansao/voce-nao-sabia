@@ -11,11 +11,6 @@ class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-        {!isServer ? {} : <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-        </script>}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0T2EQZMD2V"></script>
         
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
