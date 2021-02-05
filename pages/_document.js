@@ -7,7 +7,7 @@ class MyDocument extends Document {
   }
   
   render() {
-    const isServer= typeof window === "undefined";
+    const isServer= typeof window === undefined;
     return (
       <Html lang="pt-br">
         <Head>
