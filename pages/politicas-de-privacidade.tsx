@@ -7,7 +7,7 @@ export default function Termos() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Você Não Sabia - Curiosidades</title>
+        <title>Você Não Sabia - Políticas de Privacidade</title>
         <meta name="description" content="Aprenda e divirta-se ao mesmo tempo aqui com as curiosidades do Você Não Sabia!" />
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <meta charSet="UTF-8" />
