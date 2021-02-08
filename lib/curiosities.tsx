@@ -29,9 +29,13 @@ const flat = [
   "A Iguana pode ficar embaixo da água por 28 minutos.",
   "É estimado que 30% do sangue bombeado vá para o cérebro.",
   "O Brasil é o país com mais água doce no mundo, seguido pela Russia em segundo.",
+  "O queijo é o alimento mais roubado no mundo.",
   "Meses que começam no domingo sempre terão uma Sexta-feira treze.",
   "O cachorro mais pequeno do mundo é o Chihuahua..",
   "O morcego é o único mamífero que voa.",
+  "O corpo humano possui gordura suficiente para fazer sete sabonetes.",
+  "O ácido estomacal é forte bastante para dissolver metal.",
+  "O vaso sanitário é mais limpo do que o seu celular."
 ];
 
 const curiosities = flat.map((curiosity, index) => {
