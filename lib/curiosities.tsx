@@ -2,7 +2,9 @@ const flat = [
   "Todos os insetos possuem 6 pernas.",
   "Você gasta mais calorias dormindo do que assistindo TV.",
   "Estima-se que 11% das pessoas sejam canhota.",
+  "A luz é nada mais que radiação eletromagnética.",
   "Agosto é o mês com a maior porcentagem de nascimentos.",
+  "95% do corpo humano é formado por oxigênio, carbono, hidrogênio e nitrogênio.",
   "A batata frita (\"French Fries\" em Inglês) foi inventada na Bélgica.",
   "É estimado que o Universo possua mais de 10 bilhões de galáxias.",
   "A média de tempo para alguém dormir é 7 minutos.",
@@ -27,6 +29,7 @@ const flat = [
   "Apenas mosquitos femininos picam. ",
   "O vento só faz barulho ao colodir com algo material.",
   "A Iguana pode ficar embaixo da água por 28 minutos.",
+  "O homem possui cerca de 10% a mais de glóbulos comparado a mulheres.",
   "É estimado que 30% do sangue bombeado vá para o cérebro.",
   "O Brasil é o país com mais água doce no mundo, seguido pela Russia em segundo.",
   "O queijo é o alimento mais roubado no mundo.",
@@ -35,7 +38,17 @@ const flat = [
   "O morcego é o único mamífero que voa.",
   "O corpo humano possui gordura suficiente para fazer sete sabonetes.",
   "O ácido estomacal é forte bastante para dissolver metal.",
-  "O vaso sanitário é mais limpo do que o seu celular."
+  "O vaso sanitário é mais limpo do que o seu celular.",
+  "Cavalos possuem 18 ossos a mais que humanos",
+  "A Lua cheia brilha nove vezes mais do que a Lua minguante ou crescente.",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
 ];
 
 const curiosities = flat.map((curiosity, index) => {
